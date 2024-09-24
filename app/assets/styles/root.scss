@@ -1,0 +1,11 @@
+@import './fonts';
+
+:root {
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply font-sans;
+}
+
+@import "./app";
