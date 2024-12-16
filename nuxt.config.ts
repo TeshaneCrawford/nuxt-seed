@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
 
-  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxt/fonts', '@unocss/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxt/fonts', '@unocss/nuxt', '@vueuse/nuxt', '@nuxtjs/color-mode', '@nuxt/icon'],
 
   app: {
     head: {
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['@unocss/reset/tailwind.css', '@/assets/styles/root.scss'],
+  css: ['@unocss/reset/tailwind.css', '@/assets/styles/main.css'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -45,5 +45,11 @@ export default defineNuxtConfig({
     componentIslands: true,
     headNext: true,
     viewTransition: true
+  },
+
+  colorMode: {
+    classSuffix: '',
+    fallback: 'light',
+    preference: 'system'
   },
 })
