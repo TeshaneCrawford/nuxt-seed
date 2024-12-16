@@ -55,6 +55,27 @@ export default defineConfig({
   safelist: [
     // Color variations for common utilities
     ...Array.from({ length: 12 }, (_, i) => [
+      'tomato',
+      'red',
+      'ruby',
+      'crimson',
+      'pink',
+      'plum',
+      'purple',
+      'violet',
+      'iris',
+      'indigo',
+      'blue',
+      'cyan',
+      'teal',
+      'jade',
+      'green',
+      'grass',
+      'orange',
+      'brown',
+    ].map(color => `text-${color}-${i + 1}`)).flat(),
+    // Color variations for common utilities
+    ...Array.from({ length: 12 }, (_, i) => [
       `text-red-${i + 1}`,
       `text-blue-${i + 1}`,
       `text-green-${i + 1}`,
@@ -90,11 +111,16 @@ export default defineConfig({
           )
         ])
     ),
+    fontfamily: {
+      sans: ['DM Sans', 'sans-serif'],
+    },
   },
   presets: [
     presetUno(),
     presetAttributify(),
-    presetIcons(),
+    presetIcons({
+      scale: 1.2,
+    }),
     presetTypography(),
     presetWebFonts({
       fonts: {
