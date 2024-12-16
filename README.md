@@ -1,57 +1,85 @@
 # Nuxt Seed
 
-A minimal [Nuxt](https://nuxt.com) starter deployed on the Edge using [NuxtHub](https://hub.nuxt.com).
+A modern, edge-ready Nuxt.js starter template optimized for performance and developer experience. Built with TypeScript and deployed globally using NuxtHub on Cloudflare Workers.
 
-## Features
+## Key Features
 
-- Server-Side rendering on Cloudflare Workers
-- ESLint setup
-- Ready to add a database, blob and KV storage
-- One click deploy on 275+ locations for free
-- Application styling with UnoCss & Radix UI Colors
-- Automatic theme support with Nuxt Color Mode and Radix UI Colors
-- Easy to use fonts with Nuxt Fonts
+- 🚀 **Edge-First Architecture**
+  - Server-Side Rendering on Cloudflare Workers
+  - Global deployment across 275+ locations
+  - Built-in edge caching and optimization
 
-## Setup
+- 💻 **Developer Experience**
+  - TypeScript support out of the box
+  - ESLint pre-configured
+  - Nuxt DevTools enabled
+  - Hot Module Replacement (HMR)
 
-Make sure to install the dependencies with [pnpm](https://pnpm.io/installation#using-corepack):
+- 🎨 **Modern Styling**
+  - UnoCss for utility-first CSS
+  - Radix UI Colors for consistent theming
+  - Automatic dark/light mode support
+  - Custom font optimization with Nuxt Fonts
+
+- 🔧 **Production Ready**
+  - Zero-config deployment with NuxtHub
+  - Built-in database, KV, and blob storage support
+  - Performance optimized builds
+  - View Transitions API support
+
+## Quick Start
+
+### Prerequisites
+
+This template requires [Node.js](https://nodejs.org/) (v18+) and [pnpm](https://pnpm.io/installation#using-corepack).
+
+### Installation
 
 ```bash
+# Clone the repository from GitHub
+git clone https://github.com/TeshaneCrawford/nuxt-seed.git my-app
+cd my-app
+
+# Install dependencies
 pnpm install
 ```
 
-You can update the main text displayed by creating a `.env`:
+### Configuration
+
+Create a `.env` file to customize the welcome message:
 
 ```bash
-NUXT_PUBLIC_HELLO_TEXT="Hello my world!"
+NUXT_PUBLIC_HELLO_TEXT="Welcome to Your App!"
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Development
 
 ```bash
+# Start development server
 pnpm dev
+
+# Type-check and lint
+pnpm lint
 ```
 
-## Production
+### Deployment
 
-Build the application for production:
+Deploy to the edge with NuxtHub:
 
 ```bash
-pnpm build
+# Build and deploy
+pnpm deploy
 ```
 
-## Deploy
+Monitor your deployment through the [NuxtHub Admin](https://admin.hub.nuxt.com) dashboard.
 
+## Documentation
 
-Deploy the application on the Edge with [NuxtHub](https://hub.nuxt.com) on your Cloudflare account:
+- [Nuxt Documentation](https://nuxt.com)
+- [NuxtHub Guide](https://hub.nuxt.com)
+- [UnoCss Documentation](https://unocss.dev/)
+- [Radix Colors](https://www.radix-ui.com/colors)
 
-```bash
-npx nuxthub deploy
-```
+## License
 
-Then checkout your server logs, analaytics and more in the [NuxtHub Admin](https://admin.hub.nuxt.com).
-
-You can also deploy using [Cloudflare Pages CI](https://hub.nuxt.com/docs/getting-started/deploy#cloudflare-pages-ci).
-
+MIT
