@@ -4,8 +4,15 @@
     -moz-osx-font-smoothing: grayscale;
 
     @apply font-sans;
+    color-scheme: light;
 }
+
+html.dark {
+    color-scheme: dark;
+  }
 
 body {
     font-family: 'DM Sans', sans-serif;
+    background-color: var(--gray-1);
+    color: var(--gray-12);
 }
