@@ -26,7 +26,6 @@
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
     "eslint": "^9.11.0",
-    "sass": "^1.79.3",
     "unocss": "^0.62.4",
     "vue-tsc": "^2.1.6",
     "wrangler": "^3.78.7"

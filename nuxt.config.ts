@@ -35,22 +35,6 @@ export default defineNuxtConfig({
     }
   },
 
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: 'modern-compiler', // or "modern", "legacy"
-          additionalData: '@use "@/assets/styles/global.scss" as *;',
-        },
-      },
-    },
-    plugins: [
-      // svgLoader({
-      //   defaultImport: 'url',
-      // }),
-    ],
-  },
-
   css: ['@unocss/reset/tailwind.css', '@/assets/styles/root.scss'],
 
   // https://devtools.nuxt.com
