@@ -8,7 +8,8 @@ A minimal [Nuxt](https://nuxt.com) starter deployed on the Edge using [NuxtHub](
 - ESLint setup
 - Ready to add a database, blob and KV storage
 - One click deploy on 275+ locations for free
-- Application styling with UnoCss & Sass
+- Application styling with UnoCss & Radix UI Colors
+- Automatic theme support with Nuxt Color Mode and Radix UI Colors
 - Easy to use fonts with Nuxt Fonts
 
 ## Setup
