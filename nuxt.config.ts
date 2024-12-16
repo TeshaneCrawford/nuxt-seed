@@ -22,17 +22,17 @@ export default defineNuxtConfig({
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
     public: {
-      helloText: 'Hello from the Edge 👋'
-    }
+      helloText: 'Hello from the Edge 👋',
+    },
   },
 
   // https://eslint.nuxt.com
   eslint: {
     config: {
       stylistic: {
-        quotes: 'single'
-      }
-    }
+        quotes: 'single',
+      },
+    },
   },
 
   css: ['@unocss/reset/tailwind.css', '@/assets/styles/main.css'],
@@ -44,12 +44,12 @@ export default defineNuxtConfig({
     typedPages: true,
     componentIslands: true,
     headNext: true,
-    viewTransition: true
+    viewTransition: true,
   },
 
   colorMode: {
     classSuffix: '',
     fallback: 'light',
-    preference: 'system'
+    preference: 'system',
   },
 })

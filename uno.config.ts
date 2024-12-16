@@ -6,7 +6,7 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
-  transformerVariantGroup
+  transformerVariantGroup,
 } from 'unocss'
 
 import * as colors from '@radix-ui/colors'
@@ -95,7 +95,7 @@ export default defineConfig({
   ],
   shortcuts: [
     ['test-border', 'border-2 border-blue-6'],
-    ['test-box', 'bg-red-3 text-red-11 p-2 rounded border-2 border-red-6']
+    ['test-box', 'bg-red-3 text-red-11 p-2 rounded border-2 border-red-6'],
   ],
   theme: {
     colors: Object.fromEntries(
@@ -106,10 +106,10 @@ export default defineConfig({
           Object.fromEntries(
             Array.from({ length: 12 }, (_, i) => [
               i + 1,
-              `var(--${toKebabCase(name)}-${i + 1})`
-            ])
-          )
-        ])
+              `var(--${toKebabCase(name)}-${i + 1})`,
+            ]),
+          ),
+        ]),
     ),
     fontfamily: {
       sans: ['DM Sans', 'sans-serif'],
@@ -133,17 +133,17 @@ export default defineConfig({
       getCSS: () => `
         :root {
           ${Object.entries(lightTheme)
-            .map(([key, value]) => `${key}: ${value};`)
-            .join('\n          ')}
+              .map(([key, value]) => `${key}: ${value};`)
+              .join('\n          ')}
         }
         
         .dark {
           ${Object.entries(darkTheme)
-            .map(([key, value]) => `${key}: ${value};`)
-            .join('\n          ')}
+              .map(([key, value]) => `${key}: ${value};`)
+              .join('\n          ')}
         }
-      `
-    }
+      `,
+    },
   ],
   transformers: [
     transformerDirectives(),

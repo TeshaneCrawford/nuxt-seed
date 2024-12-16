@@ -4,7 +4,7 @@ export default defineAppConfig({
     fallback: 'light',
     classPrefix: '',
     classSuffix: '',
-    storageKey: 'nuxt-color-mode'
+    storageKey: 'nuxt-color-mode',
   },
 
   icon: {
